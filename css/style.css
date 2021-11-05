@@ -51,6 +51,9 @@
   .bg-thrid{
     background-color: var(--third-color);
   }
+  .bg-fouth{
+    background-color: var(--btn-color);
+  }
   .clr-primary{
     color: var(--primary-color);
   }
@@ -126,7 +129,7 @@
   #about-us {
     background-color: var(--primary-color); 
   }
-  #showcase .container ,  #about-us .container  {
+  #showcase .container ,  #about-us .container , #appointment .container  {
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
@@ -153,16 +156,11 @@
   }
  
 
-  #showcase .container img {
-    height: 300px;
+  #showcase .container .showcase-svg{
     display: none;
   }
- .image{
-   width: 250px;
-   opacity: 600%;
-   background-size: 100%;
-   border: none;
- }
+ 
+ 
  .btn {
   width: 80%;
   max-width: auto;
@@ -183,7 +181,6 @@
   height: 1.6rem;
   padding: .4rem 1rem;
 }
-
 
 .box-patient-feedback{
   display: flex;
@@ -210,11 +207,10 @@
   align-items: center;
  
 }
-
-#about-us .container img {
-  height: 300px;
+#about-us .container .aboutus-svg {
   display: none;
 }
+
 #service .container .service-title h1 {
 
     font-size: 1.5rem;
@@ -242,29 +238,58 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0.8rem 0.2rem;
+  padding: 1.2rem 0.2rem;
   align-items: center;
-  border-radius: 8px;
-  border : 1px solid var(--primary-color)
+  background-color:#fff;
+}
+.wrapper .service-card svg{
+ height: 30%;
+ width: 30%;
+ border-radius: 50px;
 }
 .wrapper .service-card:hover{
-
-  box-shadow: 3px var(--primary-color);
-  border: 2px solid var(--btn-color);
+  box-shadow: 0 4px 8px 0 rgb(177, 181, 184);
+ 
+  
+}
+.onhover:hover{
+  background-color: var(--primary-color);
+  box-shadow: 3px rgb(156, 203, 248);
+  border: 3px solid rgb(156, 203, 248);
 }
 
-.wrapper .service-card img:hover{
-  transform: scale(1.5);
-  margin: 2rem;
-  box-shadow: 3px var(--primary-color);
-  border: 5px solid var(--secondary-color);
-}
+
 .service-card p{
   text-align: center;
   font-size: 0.8rem;
   opacity: 60%;
 }
+#appointment .container {
+  width: 100%;
+  height: 10vh;
+}
 
+#appointment .container {
+  background-color: var(--primary-color);
+  opacity: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#appointment .container p{
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: .6rem 3rem;
+}
+#appointment .container button{
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  margin: 1rem 2rem;
+}
 
 @media (min-width: 768px) {
     .navbar-toggler {
@@ -285,12 +310,12 @@
     .container {
       max-width: 720px;
     }
-    #showcase .container img {
+    #showcase .container .showcase-svg{
       display: inline-block;
       height: auto;
     }
-    #about-us .container img {
-     
+    #about-us .container .aboutus-svg {
+
       display: block;
       height: auto;
     }
@@ -301,6 +326,11 @@
       width: auto;
      
     }
+    .wrapper .service-card img{
+       height: 30%;
+       width: 30%;
+       border-radius:  50px !important;
+     }
    
     .wrapper{
       width: 80%;
@@ -311,9 +341,17 @@
       align-items: center;
       margin: 2rem 1rem;
     }
-  }
+  #appointment {
+      width: 100%;
+      background-color: var(--primary-color);
+      opacity: 80%;
+      align-content: center;
+      padding: 1.8rem .5rem;
+      
+  } 
+  
 
-
+}
 
 
 @media (min-width: 992px) {
@@ -328,7 +366,7 @@
     .navbar{
       align-content: center;
       padding: 1.8rem 2rem;
-      height: 18vh; 
+      height: 10vh; 
     }
 
     .navbar .container h1 a{
@@ -370,22 +408,18 @@
       color: #ebeef0;
       border: none;
     }
+          .wrapper{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 1rem;
+          }
+        
     .wrapper{
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-      margin: 2rem 1rem;
-    }
-    .image{
-      width: 400px;
-      opacity: 600%;
-      background-size: 100%;
-      border: none;
-    }
-    .wrapper{
-    width: 80%;
-  }
+         width: 80%;
+         }
+   
   }
