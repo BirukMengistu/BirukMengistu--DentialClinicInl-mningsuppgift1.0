@@ -220,6 +220,11 @@
   display: none;
 }
 
+.paient-feedback{
+  padding-right: 0 1rem;
+  border-right: 3px solid   var(--btn-color);
+}
+
 #service .container .service-title h1 {
 
     font-size: 1.5rem;
@@ -251,6 +256,7 @@
   padding: 2rem .8rem;
   align-items: center;
   background-color:#fff;
+  border-radius: 4px;
 }
 .wrapper .service-card svg{
  height: 30%;
@@ -258,8 +264,8 @@
  border-radius: 50px;
 }
 .wrapper .service-card:hover{
-  box-shadow: 0 4px 8px 0 rgb(177, 181, 184);
- 
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 .onhover:hover{
@@ -336,6 +342,10 @@
 
       display: block;
       height: auto;
+    }
+    .paient-feedback{
+      
+      border-right: none;
     }
     .content {
       text-align: left;
