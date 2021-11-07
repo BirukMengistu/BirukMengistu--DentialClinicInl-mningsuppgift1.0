@@ -143,8 +143,9 @@
     padding: 1rem 1.2rem;
     margin-bottom: 2rem;
   }
-  #about-us .container .about-heading h1{
-    font-weight: 800;
+  #about-us .container .about-heading h1 ,
+   #showcase .container h1{
+    font-weight: 900;
    }
 
   .content {
@@ -154,13 +155,13 @@
   }
   .text h1 {
     font-size: 1.5rem;
-    letter-spacing: 0.15rem;
-    font-weight: 400;
+    letter-spacing: 0rem;
     margin-bottom: 1rem;
   }
   .text p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 200;
+    text-align: left;
     margin-bottom: 1rem;
   }
  
