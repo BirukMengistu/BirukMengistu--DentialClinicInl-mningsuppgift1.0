@@ -71,6 +71,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
+
 .logo{
     align-items: center;
     margin-left:15% ;
@@ -123,11 +126,11 @@
 }
 
 #showcase {
-    background-color: var(--third-color); 
+    background-color: #DEDEDE; 
   }
 
   #about-us {
-    background-color: var(--primary-color); 
+    background-color: #2BAAEC; 
   }
   #showcase .container ,
     #about-us .container ,
@@ -149,9 +152,9 @@
    }
 
   .content {
-    align-self: center;
+   
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
   }
   .text h1 {
     font-size: 1.5rem;
@@ -208,7 +211,7 @@
 }
 #service{
   width: 100%;
-  background-color: var(--third-color);
+  background-color: #F7F7F7 ;;
 }
 #service .container{
   display: flex;
@@ -221,11 +224,20 @@
   display: none;
 }
 
-.paient-feedback{
+.bord-marer{
   padding-right: 0 1rem;
   border-right: 3px solid   var(--btn-color);
 }
+.patient-info{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
 
+.patient-info strong{
+  color : var(--btn-color);
+  
+}
 #service .container .service-title h1 {
 
     font-size: 1.5rem;
@@ -248,7 +260,7 @@
   justify-content: center;
   align-items: center;
   margin: 1.5rem auto;
- 
+
 }
 .wrapper .service-card{
   display: flex;
@@ -419,10 +431,10 @@
      opacity: 60%;
     }
      
-    #about-us .container .aboutus-svg {
+    #about-us .container svg {
 
      display: block;
-     height: auto;
+     
     }
     .text h1 {
       font-size: 1.8rem;
