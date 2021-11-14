@@ -236,7 +236,8 @@
 
 .bord-marer{
   padding-right: 0 1rem;
-  border-right: 3px solid   var(--btn-color);
+  border-left: 4px solid   var(--btn-color);
+  margin: 0 0.5rem;
 }
 .patient-info{
 display: flex;
@@ -368,7 +369,7 @@ text-align: center;
     }
     #about-us .container .aboutus-svg {
 
-     display: block;
+     display:block; 
      height: auto;
     }
 
