@@ -93,6 +93,16 @@
    
 }
 
+.nav-link a:active{
+  content: "";
+  display:block;
+  margin: 0 ;
+  width: 50%;
+  border-bottom: 2px solid var(--btn-color);
+  padding: 0;
+  padding-bottom: 0.1rem ;
+
+}
 .collapse:not(.show) {
   display: none;
 }
